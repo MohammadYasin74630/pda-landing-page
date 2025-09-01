@@ -1,0 +1,60 @@
+{
+  "images": [
+    {
+      "id": "logo_header",
+      "alt": "Circular PDA logo with stylized initials 'PD'."
+    },
+    {
+      "id": "hero_profile",
+      "alt": "Smiling man in a black shirt against a PDA-branded background."
+    },
+    {
+      "id": "logo_aspire_skills",
+      "alt": "Purple logo featuring a person raising arms inside a laurel wreath, representing Aspire Skills Program."
+    },
+    {
+      "id": "logo_nexgenix",
+      "alt": "NexGenix logo with stylized 'NG' initials in gradient purple and orange."
+    },
+    {
+      "id": "logo_shikhbo",
+      "alt": "Logo of Shikhbo with stylized text and education-themed icon."
+    },
+    {
+      "id": "logo_aspire_internship",
+      "alt": "Aspire Internship Program logo with laurel wreath encircling internship icon."
+    },
+    {
+      "id": "logo_investmate",
+      "alt": "InvestMate logo with green upward arrow symbolizing smart investments."
+    },
+    {
+      "id": "logo_loyal_furniture",
+      "alt": "Loyal Furniture logo with stylized purple text and furniture icon."
+    },
+    {
+      "id": "photo_intern_group",
+      "alt": "Group of young professionals posing together indoors during Aspire Internship Program."
+    },
+    {
+      "id": "photo_team_meeting",
+      "alt": "Four people sitting around a table with laptops during a team meeting."
+    },
+    {
+      "id": "photo_prashanta_card",
+      "alt": "Portrait of Prashanta Dey, Founder and CEO, on a purple-blue gradient background."
+    },
+    {
+      "id": "photo_office_team",
+      "alt": "People working on desktop computers in an office with NexGenix branding on the wall."
+    },
+    {
+      "id": "illustration_nexmail",
+      "alt": "Futuristic digital artwork with a glowing envelope icon surrounded by circuitry, symbolizing AI-powered communication."
+    },
+    {
+      "id": "photo_prashanta_footer",
+      "alt": "Portrait of Prashanta Dey beside a quote: 'Pioneering technology and investment to shape a self-reliant future.'"
+    }
+  ]
+}
