@@ -417,7 +417,8 @@ header .active {
 
 /* building skills section */
 
-.building-skills {
+.building-skills,
+.smart-investments {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -427,24 +428,28 @@ header .active {
     position: relative;
 }
 
-.building-skills .left-image {
+.building-skills .left-image,
+.smart-investments .right-image {
     max-width: 615px;
 }
 
 @media screen and (min-width: 1024px) {
 
-    .building-skills {
+    .building-skills,
+    .smart-investments {
         width: 91%;
         flex-direction: row;
         margin: 100px auto;
     }
 
-    .building-skills .left-image {
+    .building-skills .left-image,
+    .smart-investments .right-image {
         max-width: 424px;
         max-height: 457px;
     }
 
-    .right-info img.devider {
+    .right-info img.devider,
+    .left-info img.devider {
         width: 90%;
     }
 
@@ -456,14 +461,16 @@ header .active {
 
 @media screen and (min-width: 1324px) {
 
-    .building-skills .left-image {
+    .building-skills .left-image,
+    .smart-investments .right-image {
         max-width: 524px;
         max-height: 557px;
     }
 }
 
 
-.left-image img {
+.left-image img,
+.right-image img {
     width: 100%;
     height: 100%;
     object-fit: cover;
@@ -473,7 +480,8 @@ header .active {
     text-align: right;
 }
 
-.right-info .heading {
+.right-info .heading,
+.left-info .heading {
     font-size: 40px;
     font-weight: 800;
     background: linear-gradient(82deg, #00F0FF 0%, #5200FF 48%, #FF2DF7 100%);
@@ -483,11 +491,13 @@ header .active {
     color: transparent;
 }
 
-.right-info .title {
+.right-info .title,
+.left-info .title {
     font-size: 40px;
 }
 
-.right-info .description {
+.right-info .description,
+.left-info .description {
     max-width: 41ch;
     margin-left: auto;
     margin-top: 24px;
@@ -495,12 +505,14 @@ header .active {
     line-height: 2;
 }
 
-.right-info .description span {
+.right-info .description span,
+.left-info .description span {
     color: #5200FF;
     font-weight: 700;
 }
 
-.right-info .devider {
+.right-info .devider,
+.left-info .devider {
     display: block;
     margin-block: 32px;
     margin-left: auto;
@@ -508,7 +520,8 @@ header .active {
     min-height: 1px;
 }
 
-.right-info button {
+.right-info button,
+.left-info button {
     color: white;
     display: flex;
     align-items: center;
@@ -517,9 +530,11 @@ header .active {
     border-radius: 23px;
     margin-left: auto;
     font-size: 19px;
+    cursor: pointer;
 }
 
-.right-info button img {
+.right-info button img,
+.left-info button img {
     width: 18px;
     height: 18px;
     transform: rotate(180deg);
@@ -540,4 +555,57 @@ header .active {
 .building-skills .line-4 {
     top: 51%;
     transform: rotate(5deg);
+}
+
+
+/* smart investments  */
+
+.left-info .heading {
+    width: initial;
+}
+
+.left-info .devider,
+.left-info .heading,
+.left-info .description,
+.left-info button {
+    margin-left: initial;
+}
+
+.left-info button img {
+    transform: initial;
+}
+
+.right-image {
+    order: -1;
+}
+
+
+.smart-investments .line-5,
+.smart-investments .line-6 {
+    display: none;
+    position: absolute;
+    width: 100%;
+    z-index: -1;
+}
+
+.smart-investments .line-5 {
+    top: 5%;
+}
+
+.smart-investments .line-6 {
+    top: 55%;
+    transform: rotate(-1deg);
+}
+
+
+@media screen and (min-width: 1024px) {
+
+    .right-image {
+        order: 0;
+    }
+
+    .smart-investments img.line-5,
+    .smart-investments img.line-6 {
+        display: block;
+    }
 }
