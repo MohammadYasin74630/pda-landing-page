@@ -51,6 +51,11 @@ body.lock-scroll {
     margin-inline: auto;
 }
 
+.gradient-border {
+    background: linear-gradient(to left, #350A51, #350A51) padding-box,
+        linear-gradient(80deg, #00F0FF 0%, #5200FF 48%, #FF2DF7 100%) border-box;
+    border: 1px solid transparent;
+}
 
 /* navbar */
 
@@ -80,7 +85,6 @@ body.lock-scroll {
     }
 
 }
-
 
 .navbar a {
     color: white;
@@ -281,7 +285,9 @@ header .active {
     margin-bottom: 37px;
 }
 
-.hero-section .left-row button {
+.hero-section .left-row a {
+    width: max-content;
+    text-decoration: none;
     display: flex;
     align-items: center;
     gap: 15px;
@@ -289,12 +295,9 @@ header .active {
     border-radius: 24px;
     color: white;
     font-size: 19px;
-    background: linear-gradient(to left, #350A51, #350A51) padding-box,
-        linear-gradient(80deg, #00F0FF 0%, #5200FF 48%, #FF2DF7 100%) border-box;
-    border: 1px solid transparent;
 }
 
-.hero-section .left-row button img {
+.hero-section .left-row a img {
     width: 18px;
     height: 18px;
     object-fit: cover;
@@ -337,4 +340,77 @@ header .active {
     .hero-section .right-row .bg-effect {
         top: -60px;
     }
+}
+
+
+/* brands section */
+
+.brands-section {
+    margin-block: 30px;
+}
+
+.brands-section .row {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+    position: relative;
+}
+
+@media screen and (min-width: 500px) {
+
+    .brands-section .row {
+        grid-template-columns: 1fr 1fr;
+        gap: 25px;
+    }
+}
+
+@media screen and (min-width: 900px) {
+
+    .brands-section .row {
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 30px;
+    }
+}
+
+@media screen and (min-width: 1300px) {
+
+    .brands-section .row {
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        gap: 40px;
+    }
+
+    .brands-section .row .curve-line-1,
+    .brands-section .row .curve-line-2 {
+        display: block;
+    }
+}
+
+.brands-section .row div {
+    background: white;
+    border-radius: 20px;
+    height: 133px;
+    padding: 20px;
+}
+
+
+.brands-section .row div img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.brands-section .curve-line-1 {
+    display: none;
+    width: 100%;
+    position: absolute;
+    top: 20px;
+    z-index: -1;
+}
+
+.brands-section .curve-line-2 {
+    display: none;
+    width: 100%;
+    position: absolute;
+    bottom: 20px;
+    z-index: -1;
 }
