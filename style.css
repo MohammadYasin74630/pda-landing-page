@@ -419,7 +419,8 @@ header .active {
 
 .building-skills,
 .smart-investments,
-.digital-growth {
+.digital-growth,
+.AI-communication {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -431,7 +432,8 @@ header .active {
 
 .building-skills .left-image,
 .smart-investments .right-image,
-.digital-growth .right-image {
+.digital-growth .right-image,
+.AI-communication .left-image {
     max-width: 615px;
 }
 
@@ -439,7 +441,8 @@ header .active {
 
     .building-skills,
     .smart-investments,
-    .digital-growth {
+    .digital-growth,
+    .AI-communication {
         width: 91%;
         flex-direction: row;
         margin: 100px auto;
@@ -461,7 +464,9 @@ header .active {
     .smart-investments img.line-5,
     .smart-investments img.line-6,
     .digital-growth img.line-7,
-    .digital-growth img.line-8 {
+    .digital-growth img.line-8,
+    .AI-communication img.line-9,
+    .AI-communication img.line-10 {
         display: block;
     }
 }
@@ -492,7 +497,7 @@ header .active {
     font-size: 40px;
     font-weight: 800;
     background: linear-gradient(82deg, #00F0FF 0%, #5200FF 48%, #FF2DF7 100%);
-    width: max-content;
+    max-width: max-content;
     margin-left: auto;
     background-clip: text;
     color: transparent;
@@ -552,7 +557,9 @@ header .active {
 .smart-investments .line-5,
 .smart-investments .line-6,
 .digital-growth .line-7,
-.digital-growth .line-8 {
+.digital-growth .line-8,
+.AI-communication .line-9,
+.AI-communication .line-10 {
     display: none;
     position: absolute;
     width: 100%;
@@ -591,12 +598,14 @@ header .active {
 }
 
 .smart-investments .line-5,
-.digital-growth .line-7 {
+.digital-growth .line-7,
+.AI-communication .line-9 {
     top: 5%;
 }
 
 .smart-investments .line-6,
-.digital-growth .line-8 {
+.digital-growth .line-8,
+.AI-communication .line-10 {
     top: 55%;
     transform: rotate(-1deg);
 }
@@ -693,7 +702,8 @@ header .active {
 
 @media screen and (min-width: 1024px) {
 
-    .digital-growth .right-image {
+    .digital-growth .right-image,
+    .AI-communication .left-image {
         max-width: 459px;
         max-height: 567px;
     }
@@ -702,8 +712,32 @@ header .active {
 
 @media screen and (min-width: 1324px) {
 
-    .digital-growth .right-image {
+    .digital-growth .right-image,
+    .AI-communication .left-image {
         max-width: 559px;
         max-height: 667px;
     }
+}
+
+/* smarter communication section */
+
+@media screen and (max-width: 375px) {
+
+    .AI-communication .title {
+        font-size: 36px;
+    }
+}
+
+.AI-communication .description {
+    max-width: 52ch;
+}
+
+.AI-communication .line-9 {
+    top: 15%;
+    transform: rotate(178deg);
+}
+
+.AI-communication .line-10 {
+    top: 55%;
+    transform: rotate(183deg);
 }
