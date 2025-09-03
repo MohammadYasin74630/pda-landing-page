@@ -418,7 +418,8 @@ header .active {
 /* building skills section */
 
 .building-skills,
-.smart-investments {
+.smart-investments,
+.digital-growth {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -429,14 +430,16 @@ header .active {
 }
 
 .building-skills .left-image,
-.smart-investments .right-image {
+.smart-investments .right-image,
+.digital-growth .right-image {
     max-width: 615px;
 }
 
 @media screen and (min-width: 1024px) {
 
     .building-skills,
-    .smart-investments {
+    .smart-investments,
+    .digital-growth {
         width: 91%;
         flex-direction: row;
         margin: 100px auto;
@@ -456,7 +459,9 @@ header .active {
     .building-skills img.line-3,
     .building-skills img.line-4,
     .smart-investments img.line-5,
-    .smart-investments img.line-6 {
+    .smart-investments img.line-6,
+    .digital-growth img.line-7,
+    .digital-growth img.line-8 {
         display: block;
     }
 }
@@ -545,7 +550,9 @@ header .active {
 .building-skills .line-3,
 .building-skills .line-4,
 .smart-investments .line-5,
-.smart-investments .line-6 {
+.smart-investments .line-6,
+.digital-growth .line-7,
+.digital-growth .line-8 {
     display: none;
     position: absolute;
     width: 100%;
@@ -583,11 +590,13 @@ header .active {
     order: -1;
 }
 
-.smart-investments .line-5 {
+.smart-investments .line-5,
+.digital-growth .line-7 {
     top: 5%;
 }
 
-.smart-investments .line-6 {
+.smart-investments .line-6,
+.digital-growth .line-8 {
     top: 55%;
     transform: rotate(-1deg);
 }
@@ -678,4 +687,23 @@ header .active {
 .our-motivation .title {
     font-size: 25px;
     font-weight: 600;
+}
+
+/* digital growth section */
+
+@media screen and (min-width: 1024px) {
+
+    .digital-growth .right-image {
+        max-width: 459px;
+        max-height: 567px;
+    }
+
+}
+
+@media screen and (min-width: 1324px) {
+
+    .digital-growth .right-image {
+        max-width: 559px;
+        max-height: 667px;
+    }
 }
