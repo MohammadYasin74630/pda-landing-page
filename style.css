@@ -946,3 +946,150 @@ header .active {
     padding: 10px;
     transform: rotate(-45deg);
 }
+
+
+/* footer */
+
+footer {
+    width: 95%;
+    margin: 20px auto;
+    padding: 40px 20px;
+    background: linear-gradient(63deg, #FF2DF7 0%, #5200FF 40%, #00F0FF 100%);
+    border-radius: 47px;
+}
+
+.footer-navbar {
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-content: space-between;
+    gap: 48px;
+}
+
+@media screen and (min-width: 375px) {
+
+    footer {
+        padding: 50px 30px;
+    }
+}
+
+@media screen and (min-width: 550px) {
+
+    .footer-navbar {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media screen and (min-width: 800px) {
+
+    .footer-navbar {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}
+
+@media screen and (min-width: 1050px) {
+
+    .footer-navbar {
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+}
+
+
+@media screen and (min-width: 1440px) {
+
+    .footer-navbar {
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    }
+}
+
+@media screen and (min-width: 1536px) {
+
+    footer {
+        padding: 80px;
+    }
+}
+
+.footer-navbar h2 {
+    font-size: 20px;
+    font-weight: 500;
+    margin-bottom: 36px;
+}
+
+.footer-navbar nav {
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+}
+
+.footer-navbar nav a {
+    color: #E7DCDC;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+.footer-navbar nav a span {
+    font-size: 16px;
+    padding: 4px 12px;
+    margin-left: 8px;
+    color: white;
+    background: linear-gradient(to left, #1A1A1A, #1A1A1A) padding-box,
+        linear-gradient(55deg, #262626 70%, #FFD119 150%) border-box;
+    border: 1px solid transparent;
+    border-radius: 6px;
+}
+
+.last-footer-links nav {
+    gap: 38px;
+}
+
+.last-footer-links nav a {
+    display: inline-flex;
+    align-items: center;
+    gap: 4px;
+}
+
+.last-footer-links img {
+    width: 24px;
+    height: 24px;
+    object-fit: cover;
+    transform: rotate(-45deg);
+}
+
+footer .devider {
+    background: white;
+    width: 100%;
+    min-height: 1px;
+    margin-top: 50px;
+}
+
+.copyright-section {
+    font-size: 19px;
+    font-weight: bold;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+    margin-block: 20px;
+}
+
+@media screen and (min-width: 1024px) {
+
+    footer .devider {
+        margin-top: 100px;
+    }
+
+    .copyright-section {
+        flex-direction: row;
+    }
+}
+
+.copyright-section .social-icons {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.copyright-section .social-icons img {
+    width: 24px;
+    height: 24px;
+}
