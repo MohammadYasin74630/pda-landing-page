@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Abhaya+Libre:wght@400;500;600;700;800&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@100..900&display=swap');
 
 .font-inter {
     font-family: "Inter", sans-serif;
@@ -14,6 +14,11 @@
 
 .font-montserrat {
     font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+}
+
+.font-kumbh-sans {
+    font-family: "Kumbh Sans", sans-serif;
     font-optical-sizing: auto;
 }
 
@@ -819,4 +824,125 @@ header .active {
     .prashanta-quote p {
         order: -1;
     }
+}
+
+/* learn, connect innovate section */
+
+.learn-innovate {
+    margin-block: 80px;
+    display: flex;
+    flex-direction: column;
+    gap: 34px;
+}
+
+@media screen and (min-width: 1024px) {
+    .learn-innovate {
+        flex-direction: row;
+    }
+}
+
+@media screen and (min-width: 1440px) {
+    .learn-innovate {
+        margin-left: 100px;
+        margin-block: 160px;
+    }
+}
+
+.learn-innovate .logo {
+    max-width: 63px;
+    max-height: 66px;
+}
+
+
+@media screen and (min-width: 530px) {
+    .learn-innovate .logo {
+        max-width: 163px;
+        max-height: 166px;
+    }
+}
+
+.learn-innovate .heading {
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.learn-innovate .title {
+    font-size: 38px;
+    font-weight: 500;
+    margin: 22px 0 30px 0;
+}
+
+@media screen and (min-width: 768px) {
+    .learn-innovate .title {
+        font-size: 58px;
+    }
+}
+
+.learn-innovate .description {
+    font-size: 18px;
+    line-height: 1.5;
+}
+
+.connect-with {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 40px;
+    margin-block: 45px;
+}
+
+@media screen and (min-width: 610px) {
+    .connect-with {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .connect-with {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}
+
+@media screen and (min-width: 1440px) {
+    .connect-with {
+        gap: 50px;
+    }
+}
+
+@media screen and (min-width: 1800px) {
+    .connect-with {
+        gap: 80px;
+    }
+}
+
+.connect-with .card {
+    padding-inline: 20px;
+    padding-block: 30px;
+    border-radius: 20px;
+    background: linear-gradient(63deg, #FF2DF7 0%, #5200FF 37%, #00F0FF 100%);
+}
+
+.connect-with .card p {
+    font-size: 18px;
+    line-height: 1.5;
+}
+
+.connect-with .card-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 25px;
+}
+
+.connect-with .card-header h3 {
+    font-size: 22px;
+    font-weight: 600;
+}
+
+.connect-with .card-header .image {
+    width: 44px;
+    height: 44px;
+    border-radius: 100px;
+    background: white;
+    padding: 10px;
+    transform: rotate(-45deg);
 }
